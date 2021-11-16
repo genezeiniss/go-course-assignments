@@ -2,13 +2,15 @@ package main
 
 import "testing"
 
-func TestEvenOrOdd(t *testing.T)  {
+func TestEvenOrOdd(t *testing.T) {
 
-	var integers []int
+	var numbers []int
 
 	for i := 0; i <= 10; i++ {
-		integers = append(integers, i)
+		numbers = append(numbers, i)
 	}
 
-	evenAndOdd(integers)
+	for number := range numbers {
+		isEven(number)
+	}
 }

@@ -5,13 +5,12 @@ import (
 	"strconv"
 )
 
-func evenAndOdd(integers []int) {
-
-	for integer := range integers {
-		if integer % 2 == 0 {
-			fmt.Println(strconv.Itoa(integer) + " is even")
-		} else {
-			fmt.Println(strconv.Itoa(integer) + " is odd")
-		}
+func isEven(number int) bool {
+	if number%2 == 0 {
+		fmt.Println(strconv.Itoa(number) + " is even")
+		return true
+	} else {
+		fmt.Println(strconv.Itoa(number) + " is odd")
+		return false
 	}
 }
