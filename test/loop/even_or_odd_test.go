@@ -1,6 +1,9 @@
-package main
+package loop
 
-import "testing"
+import (
+	"go-course-assignment/main/loop"
+	"testing"
+)
 
 func TestEvenOrOdd(t *testing.T) {
 
@@ -11,6 +14,6 @@ func TestEvenOrOdd(t *testing.T) {
 	}
 
 	for number := range numbers {
-		isEven(number)
+		loop.IsEven(number)
 	}
 }

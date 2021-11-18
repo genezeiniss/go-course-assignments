@@ -1,11 +1,11 @@
-package main
+package loop
 
 import (
 	"fmt"
 	"strconv"
 )
 
-func isEven(number int) bool {
+func IsEven(number int) bool {
 	if number%2 == 0 {
 		fmt.Println(strconv.Itoa(number) + " is even")
 		return true
